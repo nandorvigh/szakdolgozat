@@ -1,0 +1,26 @@
+A hamisítási módszerek és a hozzájuk tartozó képek a mappákba rendezve találhatók.
+
+A kódok futtatásához, a dolgozatom "ALKALMAZOTT TECHNOLÓGIÁK" részében említett
+programnyelv és függvénykönyvtárak telepítése szükséges.
+A program megfelelő működése érdekében a megadott verziók használata szükséges,
+eltérő verziók használata a programok nem várt működéshez vezethet.
+
+A programok futtatása parancssorból történik.Az alábbi parancsokkal:
+
+- Klón detektálás: python clone_detection.py <source_img>
+  Például: python clone_detection.py test.jpg
+
+- JPEG Ghost: python jpeg_ghost.py <source_img>
+  Például: python jpeg_ghost.py test.jpg
+
+- Double JPEG: python double_jpeg.py <source_img> <x_coordinate?> <y_coordinate?>
+  Két eset van az elsőben csak a souce_img-t adjuk meg ekkor mind a 64 hisztogramot
+  kirajzolja. Például: python double_jpeg.py test.jpg
+  A második esetben kettő darab 0 és 7 közé eső számot vár szóközzel elálasztva, ebben az
+  esetben az adott (x,y) kordinátához tartozó hisztogramot rajzolja ki.
+  Például: python double_jpeg.py test.jpg 3 3
+
+- JPEG Header: python jpeg_header.py <source_img>
+  Például python jpeg_header.py test.jpg
+
+  	
